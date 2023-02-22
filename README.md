@@ -1,24 +1,26 @@
-# product-shop
+# Vue Online Shop Project
+=======================
 
-## Project setup
-```
-npm install
-```
+This project is a simple online shop written in Vue.js. The shop uses an API to retrieve product information and display it on the website. The project includes basic functionalities such as browsing products, adding them to the cart, and placing orders.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Running the project
+-------------------
 
-### Compiles and minifies for production
-```
-npm run build
-```
+To run the project, follow these steps:
 
-### Lints and fixes files
-```
-npm run lint
-```
+1.  Clone the repository to your computer.
+2.  Navigate to the project directory.
+3.  Run the command `npm install` in the terminal to install all required packages.
+4.  Run the project by typing the command `npm run serve`. The application should be available at `http://localhost:8080`.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+# Technologies used
+-----------------
+
+The project was written in Vue.js, a JavaScript framework for creating user interfaces. 
+
+# Author
+------
+
+The project was created by JustKooba.
