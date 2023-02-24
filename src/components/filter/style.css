@@ -1,0 +1,27 @@
+.input-container button {
+  border-radius: 7px;
+  background-color: blue;
+  border: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  transition: ease-in-out 0.3s;
+  opacity: 0.7;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-container input {
+  padding: 10px 50px;
+  margin-right: 10px;
+  font-family: inherit;
+  text-align: center;
+}
