@@ -1,3 +1,44 @@
+.content-menu {
+  position: absolute;
+  background-color: white;
+  min-width: 50vw;
+  min-height: 100vh;
+  left: 100%;
+  transform: translateX(-100%);
+  top: -1px;
+  z-index: 1;
+  text-align: center;
+}
+
+.content-menu button {
+  border-radius: 15px;
+  padding: 15px 30px;
+  font-size: 15px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content-menu button:hover {
+  transition: ease-in-out 0.3s;
+  opacity: 0.7;
+}
+
 .content-menu p {
-  color: blue; /* debbuging purposes */
+  margin-bottom: 50px;
+  margin-top: 70px;
+}
+
+.close {
+  height: 50px;
+  position: absolute;
+  left: 75%;
+  top: 10px;
+  cursor: pointer;
 }
