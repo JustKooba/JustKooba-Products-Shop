@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="input-container">
-      <input type="text" />
+      <input type="text" placeholder="Search Products" />
       <button><img src="../../assets/submit.svg" alt="" /></button>
     </div>
   </div>
