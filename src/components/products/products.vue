@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div class="product-card" v-for="product in products" :key="product.id">
+    <div
+      class="product-card"
+      v-for="product in products.data"
+      :key="product.id"
+    >
       <h1>Name:{{ product.title }}</h1>
       <p>Desc:{{ product.description }}</p>
       <span>Price:{{ product.price }}</span>
@@ -11,26 +15,22 @@
 <script>
 import { reactive } from "vue";
 import axios from "axios";
-
 export default {
   name: "productsVue",
   setup() {
     const products = reactive({
       data: [],
     });
-
     async function fetchData() {
       try {
         const res = await axios.get("https://dummyjson.com/products");
-        products.data = res.data;
+        products.data = res.data.products;
         console.log(res.data);
       } catch (error) {
         console.error(error);
       }
     }
-
     fetchData();
-
     return {
       products,
     };
@@ -39,3 +39,4 @@ export default {
 </script>
 
 <style></style>
+
