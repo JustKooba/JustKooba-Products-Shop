@@ -6,6 +6,7 @@
       :key="product.id"
     >
       <h1>Name:{{ product.title }}</h1>
+      <img :src="product.images[0]" alt="Product Image" />
       <p>Desc:{{ product.description }}</p>
       <span>Price:{{ product.price }}</span>
     </div>
@@ -39,4 +40,3 @@ export default {
 </script>
 
 <style></style>
-
