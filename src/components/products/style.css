@@ -1,0 +1,23 @@
+.product-card {
+  display: inline-block;
+  width: 45%;
+  margin: 20px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.product-card img {
+  max-height: 200px;
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 90%;
+  }
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
