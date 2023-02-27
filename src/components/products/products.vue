@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="products-container">
     <div
       class="product-card"
       v-for="product in products.data"
