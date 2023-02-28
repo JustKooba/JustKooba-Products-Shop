@@ -5,10 +5,13 @@
       v-for="product in products.data"
       :key="product.id"
     >
-      <h1>Name:{{ product.title }}</h1>
       <img :src="product.images[0]" alt="Product Image" />
-      <p>Desc:{{ product.description }}</p>
-      <span>Price:{{ product.price }}</span>
+
+      <div class="right">
+        <h1>{{ product.title }}</h1>
+        <p>currently in stock: {{ product.stock }}</p>
+        <span>{{ product.price }}$</span>
+      </div>
     </div>
   </div>
 </template>
