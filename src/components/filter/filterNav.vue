@@ -31,9 +31,22 @@
           <img src="../../assets/oil.svg" alt="droplet icon" /> Oils
         </button>
       </div>
-      <div class="item"><button>Care</button></div>
-      <div class="item"><button>Home</button></div>
-      <div class="item"><button>Serums</button></div>
+      <div class="item">
+        <button>
+          <img src="../../assets/care.svg" alt="heart with a plaster icon" />
+          Care
+        </button>
+      </div>
+      <div class="item">
+        <button>
+          <img src="../../assets/home.svg" alt="home icon" /> Home
+        </button>
+      </div>
+      <div class="item">
+        <button>
+          <img src="../../assets/serum.svg" alt="pipette icon" /> Serums
+        </button>
+      </div>
     </div>
   </div>
 </template>
