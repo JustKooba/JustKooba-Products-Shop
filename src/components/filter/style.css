@@ -62,6 +62,6 @@ form input {
 }
 
 .carousel .item button:focus {
-  background-color: blue;
+  background-color: rgb(0, 183, 255);
   color: #fff;
 }
