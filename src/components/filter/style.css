@@ -25,3 +25,43 @@ form input {
   border-radius: 7px;
   border: none;
 }
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  width: 460px;
+  scroll-padding: 24px;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.carousel .item {
+  padding: 10px;
+  border-radius: 8px;
+  scroll-snap-align: start;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .item button {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.perfume {
+  max-height: 50px;
+}
+
+.carousel .item button:focus {
+  background-color: blue;
+  color: #fff;
+}
