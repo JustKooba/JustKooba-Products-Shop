@@ -17,6 +17,7 @@ body {
   background-color: gray;
   border-radius: 10px;
   height: 43px;
+  width: 43px;
   margin-right: 5px;
 }
 
@@ -27,11 +28,15 @@ span {
 
 .user-greet {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10px;
 }
 
 .user {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .hello {
@@ -39,11 +44,13 @@ span {
 }
 
 .menu {
-  height: 50px;
+  height: 40px;
   cursor: pointer;
 }
 
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
