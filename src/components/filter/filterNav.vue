@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="input-container">
       <form>
         <input type="text" placeholder="Search Products" />
