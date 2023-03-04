@@ -4,6 +4,7 @@
       class="product-card"
       v-for="product in products.data"
       :key="product.id"
+      :style="{ display: productDisplay }"
     >
       <img :src="product.images[0]" alt="Product Image" />
 
@@ -14,13 +15,32 @@
       </div>
     </div>
   </div>
+  <div class="error" :style="{ display: errorDisplay }">
+    <h1>The service is currently unaviable. please try again later.</h1>
+  </div>
 </template>
 
 <script>
 import { reactive } from "vue";
 import axios from "axios";
+
 export default {
+  data() {
+    return {
+      productDisplay: "flex",
+      errorDisplay: "none",
+      category: "",
+    };
+  },
+
   name: "productsVue",
+  methods: {
+    handleSort(category) {
+      this.category = category;
+      console.log("Sorting by category: ", this.category);
+    },
+  },
+
   setup() {
     const products = reactive({
       data: [],
@@ -32,6 +52,7 @@ export default {
         console.log(res.data);
       } catch (error) {
         console.error(error);
+        this.errorDisplay = "flex";
       }
     }
     fetchData();
@@ -41,5 +62,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
