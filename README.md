@@ -1,7 +1,7 @@
 # Vue Online Shop Project
 =======================
 
-This project is a simple online shop written in Vue.js. The shop uses an API to retrieve product information and display it on the website. The project includes basic functionalities such as browsing products, adding them to the cart, and placing orders.
+This side project is a simple online shop written in Vue.js. The shop uses an API to retrieve product information and display it on the website. The project includes basic functionalities such as browsing products, adding them to the cart, and placing orders.
 
 # Running the project
 -------------------
